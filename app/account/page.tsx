@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { getServerSession } from "next-auth";
-import { authOptions } from "../api/auth/[...nextauth]/route";
+import { authOptions } from "@/lib/authOptions";
 
 export default async function Account() {
 	const session = await getServerSession(authOptions);
